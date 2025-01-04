@@ -21,46 +21,7 @@
     <color rgba="0.5 0.5 0.5 1"/>
   </material>
 
-<!-- <link
-    name="base_link">
-    <inertial>
-      <origin
-        xyz="4.1633E-17 0 0.073876"
-        rpy="0 0 0" />
-      <mass
-        value="17.147" />
-      <inertia
-        ixx="0.192"
-        ixy="-4.9423E-10"
-        ixz="1.2752E-17"
-        iyy="0.192"
-        iyz="2.6417E-18"
-        izz="0.29544" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/fero/dev_ws/src/my_bot/meshes/base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="file:///home/fero/dev_ws/src/my_bot/meshes/base_link.STL" />
-      </geometry>
-    </collision>
-  </link> -->
+
   <link
     name="link_1">
     <inertial>
@@ -230,8 +191,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="3.142"
+      lower="-1.572"
+      upper="1.572"
       effort="200"
       velocity="3" />
   </joint>
@@ -288,8 +249,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="-3.142"
+      lower="-1.572"
+      upper="1.572"
       effort="200"
       velocity="3" />
   </joint>

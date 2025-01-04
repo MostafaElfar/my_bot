@@ -8,6 +8,8 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
+from moveit_configs_utils import MoveItConfigsBuilder
+from moveit_configs_utils.launches import generate_moveit_rviz_launch
 
 
 
@@ -36,12 +38,13 @@ def generate_launch_description():
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'my_bot'],
                         output='screen')
-
+    
 
 
     # Launch them all!
     return LaunchDescription([
         rsp,
         gazebo,
-        spawn_entity,
+        spawn_entity
+
     ])
